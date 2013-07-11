@@ -1,0 +1,8 @@
+<%= javascript_include_tag 'redirect' %>
+<%= "id = #{params[:id]}"%>
+redirect
+<%if flash[:error]%>
+  <div id="flash" style="display:none">
+    <%= flash[:error]%>
+  </div>
+<%end%>

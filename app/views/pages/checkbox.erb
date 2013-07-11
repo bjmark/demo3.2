@@ -1,0 +1,8 @@
+<p>
+<%="colors=#{params[:colors]}"%>
+</p>
+<%=form_tag '/pages/checkbox' do %>
+<%=check_box_tag 'colors[]','red'%>
+<%=check_box_tag 'colors[]','blue'%><br/>
+<%=button_tag%>
+<%end%>

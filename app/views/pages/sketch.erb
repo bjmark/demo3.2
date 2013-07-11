@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag "sketch" %>
+<%= javascript_include_tag "sketch" %>
+<%= javascript_include_tag "simple_sketch" %>
+<p>canvas</p>
+<canvas id="simple_sketch" width="800" height="300"></canvas>
+<br>
+<%= button_tag 'show_png', :id=>'show_png'%>
+<%= button_tag 'start_syn', :id=>'toggle_syn'%>
+<br>
+
+<img id="simple_sketch_syn" src="/cat.jpg" alt="cat" width="800" height="300"/>
